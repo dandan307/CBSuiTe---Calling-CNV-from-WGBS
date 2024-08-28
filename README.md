@@ -5,8 +5,8 @@
 ## Contents 
 
 - [Installation](#installation)
-- [Features](#features)
-- [Instructions Manual](#instructions-manual)
+- [Run CBSuiTe](#run-cbsuite)
+- [Parameters](#parameters)
 - [Usage Examples](#usage-examples)
 - [Citations](#citations)
 - [License](#license)
@@ -33,3 +33,21 @@ or install following dependencies:
 * scikit-learn
 * einops
 * samtools
+  
+## Run CBSuiTe
+### Step 0: Install Conda and set up your environment
+See detail in [Installation](#installation).
+### Step 1: Run preprocess script
+CBSuiTe need to obtain read depth and methylation level information from ``bam`` files and convert to ``npy`` files.
+You can simply run ``preprocess.sh`` by following commands:
+```shell
+$ source preprocess.sh
+```
+### Step 2: Run call script
+Then you can predict CNV with CBSuiTe pretrained model.
+```shell
+$ source callCNV.sh
+```
+
+
+## Parameters
