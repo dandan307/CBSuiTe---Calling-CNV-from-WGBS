@@ -17,9 +17,19 @@
 
 ### Requirements
 
-For easy requirement handling, you can use ECOLE_environment.yml files to initialize conda environment with requirements installed:
+You can directly use ``cbsuite_environment.yml`` file to initialize conda environment with requirements installed:
 
 ```shell
 $ conda env create --name cbsuite -f cbsuite_environment.yml
 $ conda activate cbsuite
 ```
+or install following dependencies:
+* Python >= 3.8
+* torch >= 1.7.1
+* Numpy
+* numpy
+* pandas
+* tqdm
+* scikit-learn
+* einops
+* samtools
