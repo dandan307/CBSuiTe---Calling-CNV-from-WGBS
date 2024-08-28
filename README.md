@@ -1,1 +1,4 @@
-# CBSuiTe---Calling-CNV-from-WGBS
+# CBSuiTe---Calling CNV from WGBS
+
+Installation
+--
