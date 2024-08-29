@@ -7,7 +7,6 @@
 - [Installation](#installation)
 - [Run CBSuiTe](#run-cbsuite)
 - [Parameters](#parameters)
-- [Usage Examples](#usage-examples)
 - [Citations](#citations)
 - [License](#license)
 
@@ -25,18 +24,17 @@ $ conda activate cbsuite
 ```
 or install following dependencies:
 * Python >= 3.8
-* torch >= 1.7.1
+* Torch >= 1.7.1
 * Numpy
-* numpy
-* pandas
-* tqdm
-* scikit-learn
-* einops
-* samtools
+* Pandas
+* Tqdm
+* Scikit-learn
+* Einops
+* Samtools
   
 ## Run CBSuiTe
 ### Step 0: Install Conda and set up your environment
-See detail in [Installation](#installation).
+See details in [Installation](#installation).
 ### Step 1: Run preprocess script
 CBSuiTe need to obtain read depth and methylation level information from ``bam`` files and convert to ``npy`` files.
 You can simply run ``preprocess.sh`` by following commands:
@@ -51,3 +49,37 @@ $ source callCNV.sh
 
 
 ## Parameters
+You can adjust these parameters in ``callCNV.sh`` to choose the way you want to extract cnv.
+
+### Required Arguments
+
+#### -m, --model
+- If you want to use pretrained CBSuiTe weights choose one of the options: 
+  (i) germlilne  (ii) somatic.
+- Or you can use your own trained model by giving path/to/your/model.pt
+
+#### -i, --input
+- Relative or direct input directory path which stores input files(npy files) for CBSuiTe.
+  
+#### -o, --output
+- Relative or direct output directory path to write CBSuiTe output file.
+
+#### -n, --normalize
+- Relative or direct path for mean&std stats of read depth values to normalize. These values are obtained precalculated from the training dataset.
+
+
+### Optional Arguments
+
+#### -g, --gpu
+- Whether using GPU. 1 means using GPU, 0 means using CPU
+  
+#### -bs, --batch_size
+- Batch size used to perform CNV call on the samples.
+  
+#### -v, --version
+- Check the version of CBSuiTe.
+
+#### -h, --help
+- See help page.
+
+## Citations
