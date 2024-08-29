@@ -71,7 +71,7 @@ You can adjust these parameters in ``callCNV.sh`` to choose the way you want to 
 ### Optional Arguments
 
 #### -g, --gpu
-- Whether using GPU. 1 means using GPU, 0 means using CPU
+- Whether using GPU. If specified, using GPU.
   
 #### -bs, --batch_size
 - Batch size used to perform CNV call on the samples.
@@ -83,3 +83,4 @@ You can adjust these parameters in ``callCNV.sh`` to choose the way you want to 
 - See help page.
 
 ## Citations
+balabala
