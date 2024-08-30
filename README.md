@@ -1,6 +1,7 @@
 # CBSuiTe---Calling CNV from WGBS
 > CBSuiTe is a deep learning based software that performs CNV call predictions on WGBS data using read depth sequences.
 > CBSuiTe can predict CNV on both germline and somatic data.
+![image](https://github.com/user-attachments/assets/8f0e8e0d-cf72-40ff-8102-73e53171de9c)
 
 ## Contents 
 
